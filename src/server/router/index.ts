@@ -7,8 +7,7 @@ import { exampleRouter, messageRouter } from "./example";
 export const appRouter = createRouter()
   .transformer(superjson)
   .merge("example.", exampleRouter)
-  .merge("message.", messageRouter);
-  ;
+  .merge("message.", messageRouter)  ;
 
 // export type definition of API
 export type AppRouter = typeof appRouter;
