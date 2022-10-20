@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     refetch,
     isLoading,
   } = trpc.useQuery(["message.getLatest"], {
-      refetchInterval: 5000,
+      refetchInterval: 60000,
       refetchOnReconnect: false,
       refetchOnWindowFocus: false,
   });
